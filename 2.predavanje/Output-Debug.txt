@@ -1,0 +1,12 @@
+﻿'2.predavanje.exe' (Win32): Loaded 'C:\Users\PetarPC\MA\2.predavanje\Debug\2.predavanje.exe'. Symbols loaded.
+'2.predavanje.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. Cannot find or open the PDB file.
+'2.predavanje.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Cannot find or open the PDB file.
+'2.predavanje.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. Cannot find or open the PDB file.
+'2.predavanje.exe' (Win32): Loaded 'C:\Windows\SysWOW64\vcruntime140d.dll'. Cannot find or open the PDB file.
+'2.predavanje.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp140d.dll'. Cannot find or open the PDB file.
+'2.predavanje.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbased.dll'. Cannot find or open the PDB file.
+The thread 0x2d0c has exited with code -1073741510 (0xc000013a).
+The thread 0x1c98 has exited with code -1073741510 (0xc000013a).
+The thread 0x2218 has exited with code -1073741510 (0xc000013a).
+The thread 0xdb8 has exited with code -1073741510 (0xc000013a).
+The program '[1888] 2.predavanje.exe' has exited with code -1073741510 (0xc000013a).
