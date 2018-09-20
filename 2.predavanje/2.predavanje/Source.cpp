@@ -16,24 +16,38 @@ char character;
 	return result;
 }*/
 
-int rezultat(int x)
+//int rezultat(int x)
+//{
+//	switch (x)
+//	{
+//	case 1:
+//		cout << "pobjeda!!!!" << endl;
+//		return x;
+//
+//	case 2:
+//		cout << "gubitak" << endl;
+//		return x;
+//
+//	default:
+//		cout << "neispravan unos" << endl;
+//		return x;
+//	}
+//}
+
+
+void rezultat(int x)
 {
 	switch (x)
 	{
 	case 1:
 		cout << "pobjeda!!!!" << endl;
-		return x;
+		break;
 
 	case 2:
-		cout << "gubitak" << endl;
-		return x;
-
-	default:
-		cout << "neispravan unos" << endl;
-		return x;
+		cout << "gubitak!!!!" << endl;
+		break;
 	}
 }
-
 
 
 int main()
@@ -42,9 +56,10 @@ int main()
 	sizeof(floatingpointnumber);
 	sizeof(boolean);
 	sizeof(character);
+	
 
-	//int kraj = velicina(2, 7);
-	int kraj = rezultat(4);
-	cout << kraj << endl;
+	rezultat(2);
 	system("pause");
+	
+	cin.get();
 }
