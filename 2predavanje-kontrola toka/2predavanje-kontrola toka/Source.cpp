@@ -1,4 +1,5 @@
 #include <iostream>
+#include "cot.h"
 using namespace std;
 
 
@@ -51,6 +52,18 @@ int main()
 		cout << y << endl;
 		y++;
 	}
+
+	//DO WHILE
+	cout << "***********************************************************DO WHILE********************************************" << endl;
+	int c = 15;
+	do
+	{
+		cout << c << endl;
+		c++;
+
+	} while (c < 10);
+	
+	cout << marko << endl;
 
 	cin.get();
 }
