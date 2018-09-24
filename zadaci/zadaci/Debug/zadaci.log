@@ -1,3 +1,3 @@
 ﻿  Source.cpp
-c:\users\petarpc\ma\zadaci\zadaci\source.cpp(63): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\petarpc\ma\zadaci\zadaci\source.cpp(117): warning C4018: '<=': signed/unsigned mismatch
   zadaci.vcxproj -> C:\Users\PetarPC\MA\zadaci\Debug\zadaci.exe
