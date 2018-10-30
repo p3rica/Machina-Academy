@@ -1,6 +1,58 @@
 ﻿#include <iostream>
 using namespace std;
 
+
+
+/*#include <ctime>
+
+int main()
+{
+	cout << time(0) << endl;
+	system("pause");
+
+	cout << time(0) << endl;
+	system("pause");
+}*/
+
+
+/*#include <cstdlib>
+
+
+int main()
+{
+	for (size_t i = 0; i < 20; i++)
+	{
+		cout << 3 +(rand() % 5) << endl;
+
+	}
+	
+
+	system("pause");
+}*/
+
+
+#include <vector>
+
+int main()
+{
+	std::vector<int> myvector;
+	int myint;
+
+	std::cout << "Please enter some integers (enter 0 to end):\n";
+
+	do {
+		std::cin >> myint;
+		myvector.push_back(myint);
+	} while (myint);
+
+	std::cout << "myvector stores " << int(myvector.size()) << " numbers.\n";
+	std::cout << myvector[1] << endl;
+	cout << "the size of vector is" << sizeof(myvector) << endl;
+
+	system("pause");
+	return 0;
+}
+
 // 1. Zadatak**************************************************************************************************************************************************************************************************
 
 /*Requires:
@@ -204,33 +256,32 @@ Person 8: ate 4 pancakes
 Person 5: ate 0 pancakes*/
 
 
-//int osoba[10];
-//int x, i;
-//
-//
-//int main()
-//{
-//	
-//
-//	for ( i = 1; i <= 10; i++)
-//	{
-//		cout << "Unesite broj pojedenih palacinki za osobu: " << i  << endl;
-//		cin >> osoba[i];
-//	}
-//
-//	for ( i = 0; i <= 10; ++i)
-//	{
-//		if (osoba[0] < osoba[i])
-//		{
-//			osoba[0] = osoba[i];
-//		}
-//
-//	}
-//	
-//	cout << "najveci broj pojedenih palacinaka je " << osoba[0] << endl;
-//	
-//	system("pause");
-//}
+/*int osoba[10];
+int i;
+int nMax = 0;
+
+
+int main()
+{
+	
+
+	for ( i = 1; i <= 10; i++)
+	{
+		cout << "unesite broj pojedenih palacinki za osobu: " << i  << endl;
+		cin >> osoba[i];
+	}
+
+	if (nMax < osoba[0])
+	{
+		nMax = osoba[0];
+		osoba[0 + 1];
+	}
+	
+	
+	cout << "najveci broj pojedenih palacinaka je " << nMax << endl;
+	
+	system("pause");
+}*/
 
 
 
