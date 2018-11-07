@@ -9,7 +9,7 @@ enum haircol
 	blond,
 	brown,
 	black,
-};
+}bojaKose;
 
 enum eyscol
 {
@@ -98,7 +98,7 @@ int main()
 	Mark.hight = 183;
 	Mark.weight = 85;
 
-	osobe Petar = osobe("Petar", "Stanic", "12345678901", 31, "Army", haircol::brown, eyscol::green, 183, 85 );
+	osobe Petar = osobe("Petar", "Stanic", "12345678901", 31, "Army", haircol(1), eyscol::green, 183, 85 );
 
 	string PetarsSSN = Petar.getSSN();
 
