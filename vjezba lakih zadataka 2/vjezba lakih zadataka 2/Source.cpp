@@ -143,34 +143,36 @@ using namespace std;
 //Napišit program koji æe na osnovu unesenih vrijednosti ispisati koliko najviše paketiæa mogu napraviti.
 
 
-int z, j, p;
+//int z, j, p;
+//
+//int main()
+//{
+//	cout << "unesite broj cokoladnih zeka" << endl;
+//	cin >> z;
+//
+//	cout << "unesite broj cokoladnih jaja" << endl;
+//	cin >> j;
+//
+//	cout << "unesite broj cokoladnih pilica" << endl;
+//	cin >> p;
+//
+//	int pakZ = z;
+//	int pakJ = j / 5;
+//	int pakP = p / 3;
+//
+//	int pakB = pakZ;
+//
+//	if (pakJ < pakP && pakJ < pakB)
+//	{		
+//		pakB = pakJ;
+//	}else
+//		if (pakP < pakJ && pakB > pakP)
+//		{
+//			pakB = pakP;
+//		}
+//
+//	cout << "maksimalan broj paketa koje je moguce satstaviti je " << pakB << endl;
+//	system("pause");
+//}
 
-int main()
-{
-	cout << "unesite broj cokoladnih zeka" << endl;
-	cin >> z;
 
-	cout << "unesite broj cokoladnih jaja" << endl;
-	cin >> j;
-
-	cout << "unesite broj cokoladnih pilica" << endl;
-	cin >> p;
-
-	int pakZ = z;
-	int pakJ = j / 5;
-	int pakP = p / 3;
-
-	int pakB = pakZ;
-
-	if (pakJ < pakP && pakJ < pakB)
-	{		
-		pakB = pakJ;
-	}else
-		if (pakP < pakJ && pakB > pakP)
-		{
-			pakB = pakP;
-		}
-
-	cout << "maksimalan broj paketa koje je moguce satstaviti je " << pakB << endl;
-	system("pause");
-}
