@@ -1,2 +1,3 @@
 ﻿  Source.cpp
+c:\users\petarpc\ma\arton zadaci\arton zadaci\source.cpp(171): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Arton zadaci.vcxproj -> C:\Users\PetarPC\MA\Arton zadaci\Debug\Arton zadaci.exe

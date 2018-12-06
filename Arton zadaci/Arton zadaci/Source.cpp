@@ -39,44 +39,160 @@ using namespace std;
 
 
 //	2. ZADATAK;
-//	Napisati program za hrvatsku lutriju.Korisnik radi unos od 7 brojeva u rasponu od 1 - 49, nakon toga program radi "izvlacenje" tj.radnom generira 7 brojeva od 1 - 49, 
+//	Napisati program za hrvatsku lutriju. Korisnik radi unos od 7 brojeva u rasponu od 1 - 49, nakon toga program radi "izvlacenje" tj.radnom generira 7 brojeva od 1 - 49, 
 //	te ispisuje korisnikov unos, zatim izvucene brojeve te na kraju koliko pogodataka korisnik ima.
 
-//int x1, x2, x3, x4, x5, x6, x7;
-//vector <int> y;
-//
-//
-//
-//int main()
-//{
-//	cout << "Molimo unesite sedam brojeva od 1 do 49: " << endl;
-//	cin >> x1;
-//	cin >> x2;
-//	cin >> x3;
-//	cin >> x4;
-//	cin >> x5;
-//	cin >> x6;
-//	cin >> x7;
-//
-//	srand(time(0));
-//
-//	if (x1 > 49 || x2 > 49 || x3 > 49 || x4 > 49 || x5 > 49 || x6 > 49 || x7 > 49)
-//	{
-//		cout << "Svi uneseni brojevi nisu u rasponu od 1 do 49" << endl;
-//		
-//	}
-//
-//
-//	for (int i = 0; i < 7; i++)
-//	{
-//		y.push_back(1 + (rand() % 49));
-//	}
-//
-//	cout << "Vasi izabrani brojevi su: " << x1 <<", " << x2 << ", " << x3 << ", " << x4 << ", " << x5 << ", " << x6 << " i " << x7 << endl;
-//	cout << "Izvuceni brojevi su: " << y[0] << ", " << y[1] << ", " << y[2] << ", " << y[3] << ", " << y[4] << ", " << y[5] << " i " << y[6] << endl;
-//
-//	system("pause");
-//}
+int x1, x2, x3, x4, x5, x6, x7; // odabrano brojevi
+vector <int> z; // vektor zakljucanih brojeva
+int gbr; // generirani broj
+vector <int> y; // vektor generiranih brojeva
+
+
+int main()
+{
+	cout << "molimo unesite sedam brojeva od 1 do 49: " << endl;
+	cin >> x1;
+	if (x1 > 49 || x1 <= 0)
+	{
+		cout << "uneseni broj nije u rasponu od 1 do 49, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+	z.push_back(x1);
+
+	
+	cin >> x2;
+	if (x2 > 49 || x2 <= 0)
+	{
+		cout << "uneseni broj nije u rasponu od 1 do 49, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+
+	if (x2 == x1)
+	{
+		cout << "uneseni broj ne moze biti jednak nekom od prije unesenih brojeva, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+	z.push_back(x2);
+
+
+	cin >> x3;
+	if (x3 > 49 || x3 <= 0)
+	{
+		cout << "uneseni broj nije u rasponu od 1 do 49, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+
+	if (x3 == x1 || x3 == x2)
+	{
+		cout << "uneseni broj ne moze biti jednak nekom od prije unesenih brojeva, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+	z.push_back(x3);
+
+
+	cin >> x4;
+	if (x4 > 49 || x4 <= 0)
+	{
+		cout << "uneseni broj nije u rasponu od 1 do 49, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+
+	if (x4 == x1 || x4 == x2 || x4 == x3)
+	{
+		cout << "uneseni broj ne moze biti jednak nekom od prije unesenih brojeva, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+	z.push_back(x4);
+
+
+	cin >> x5;
+	if (x5 > 49 || x5 <= 0)
+	{
+		cout << "uneseni broj nije u rasponu od 1 do 49, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+
+	if (x5 == x1 || x5 == x2 || x5 == x3 || x5 == x4)
+	{
+		cout << "uneseni broj ne moze biti jednak nekom od prije unesenih brojeva, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+	z.push_back(x5);
+
+
+	cin >> x6;
+	if (x6 > 49 || x6 <= 0)
+	{
+		cout << "uneseni broj nije u rasponu od 1 do 49, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+
+	if (x6 == x1 || x6 == x2 || x6 == x3 || x6 == x4 || x6 == x5)
+	{
+		cout << "uneseni broj ne moze biti jednak nekom od prije unesenih brojeva, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+	z.push_back(x6);
+
+
+	cin >> x7;
+	if (x7 > 49 || x7 <= 0)
+	{
+		cout << "uneseni broj nije u rasponu od 1 do 49, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+
+	if (x7 == x1 || x7 == x2 || x7 == x3 || x7 == x4 || x7 == x5 || x7 == x6)
+	{
+		cout << "uneseni broj ne moze biti jednak nekom od prije unesenih brojeva, molim krenite ponovo" << endl;
+		system("pause");
+		return 0;
+	}
+	z.push_back(x7);
+
+
+
+
+
+
+
+	srand(time(0));// RNG sa lokalnim vremenom kao seed brojem
+
+	
+
+	
+	for (int i = 1; i <= 7; i++)
+	{
+		gbr = (1 + (rand() % 49));
+
+		/*if (gbr != y[0] && gbr != y[1] && gbr != y[2] && gbr != y[3] && gbr != y[4] && gbr != y[5] && gbr != y[6])
+		{
+			y.push_back(gbr);
+		}
+		else
+		{
+			i--;
+		}*/
+		cout << gbr << endl;
+	}
+
+	cout << "vasi izabrani brojevi su: " << x1 <<", " << x2 << ", " << x3 << ", " << x4 << ", " << x5 << ", " << x6 << " i " << x7 << endl;
+	cout << "izvuceni brojevi su: " << y[0] << ", " << y[1] << ", " << y[2] << ", " << y[3] << ", " << y[4] << ", " << y[5] << " i " << y[6] << endl;
+
+	system("pause");
+}
 
 
 
@@ -154,41 +270,41 @@ using namespace std;
 //	Napisati program koji prima text i character od strane korisnika, te ispisuje taj text bez tog charactera.
 
 
-vector <string> split(const string s, char delimeter)
-{
-	vector <string> rezultat;
-	stringstream ss(s);
-	string item;
-
-	while (getline(ss, item, delimeter))
-	{
-		rezultat.push_back(item);
-	}
-
-	return rezultat;
-}
-
-
-int main()
-{
-	string unos;
-	char delimeter;
-
-	cout << "Molim unesite tekst." << endl;
-	cin >> unos;
-
-	cout << "Molim unesite slovo." << endl;
-	cin >> delimeter;
-
-	vector <string> a = split(unos, delimeter);
-	
-	for (auto i : a) cout << i << endl;
-	
-	system("pause");
-}
-
-
-
+//vector <string> split(const string s, char delimeter)
+//{
+//	vector <string> rezultat;
+//	stringstream ss(s);
+//	string item;
+//
+//	while (getline(ss, item, delimeter))
+//	{
+//		rezultat.push_back(item);
+//	}
+//
+//	return rezultat;
+//}
+//
+//
+//int main()
+//{
+//	string unos;
+//	char delimeter;
+//
+//	cout << "Molim unesite tekst." << endl;
+//	cin >> unos;
+//
+//	cout << "Molim unesite slovo." << endl;
+//	cin >> delimeter;
+//
+//	vector <string> a = split(unos, delimeter);
+//	
+//	for (auto i : a) cout << i << endl;
+//	
+//	system("pause");
+//}
+//
+//
+//
 
 
 
